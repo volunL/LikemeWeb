@@ -8,7 +8,7 @@ import javax.servlet.ServletContext;
 
 public class BaseService implements ServletContextAware {
 
-    //静态常量 servlet上下文对象
+    //静态常量 servlet上下文对象 避免空指针
     private static ServletContext servletContext;
 
     @Override
